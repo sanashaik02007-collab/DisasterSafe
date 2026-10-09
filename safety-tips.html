@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Tips | DisasterSafe</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .tips-section {
+            padding: 45px 8%;
+        }
+
+        .tips-list {
+            list-style: none;
+            margin-top: 18px;
+        }
+
+        .tips-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #edf0f5;
+            color: #586477;
+            font-size: 14px;
+        }
+
+        .tips-list li::before {
+            content: "✓ ";
+            color: #d62828;
+            font-weight: bold;
+        }
+
+        .tips-card {
+            padding: 28px;
+            background: #fff;
+            border: 1px solid #e9edf3;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(25, 40, 65, 0.05);
+        }
+
+        .tips-card h3 {
+            margin-bottom: 8px;
+            font-size: 21px;
+        }
+
+        .tips-card .card-icon {
+            margin-bottom: 12px;
+        }
+
+        .kit-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .kit-item {
+            padding: 14px;
+            background: #fff;
+            border-radius: 8px;
+            border: 1px solid #e9edf3;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .tips-section {
+                padding: 35px 5%;
+            }
+
+            .kit-list {
+                grid-template-columns: 1fr;
+            }
+
+            .tips-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">🛡️ DisasterSafe</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="alerts.html">Disaster Alerts</a>
+            <a href="safety-tips.html">Safety Tips</a>
+            <a href="emergency.html">Emergency Help</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">PREPARE BEFORE DISASTER STRIKES</p>
+
+            <h1>Safety Tips for <span>Every Emergency</span></h1>
+
+            <p>
+                Learn how to prepare, protect yourself and help others
+                during natural disasters and other emergencies.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#emergency-kit" class="btn primary">
+                    Prepare Your Emergency Kit
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-icon">🧰</div>
+    </section>
+
+    <!-- Safety Tips -->
+    <section class="tips-section">
+        <div class="section-heading">
+            <p class="tagline">BE INFORMED</p>
+            <h2>Disaster Safety Guidelines</h2>
+            <p>Remember these important precautions.</p>
+        </div>
+
+        <div class="disaster-grid">
+
+            <!-- Flood -->
+            <div class="tips-card">
+                <div class="card-icon">🌊</div>
+                <h3>Flood Safety</h3>
+                <ul class="tips-list">
+                    <li>Move to higher ground when advised.</li>
+                    <li>Never walk or drive through floodwater.</li>
+                    <li>Stay away from drains and fast-flowing water.</li>
+                    <li>Keep drinking water and essential medicines ready.</li>
+                    <li>Follow official evacuation instructions.</li>
+                </ul>
+            </div>
+
+            <!-- Earthquake -->
+            <div class="tips-card">
+                <div class="card-icon">🌎</div>
+                <h3>Earthquake Safety</h3>
+                <ul class="tips-list">
+                    <li>Drop, Cover and Hold On during shaking.</li>
+                    <li>Protect your head and neck.</li>
+                    <li>Stay away from windows and heavy objects.</li>
+                    <li>Do not use elevators during an earthquake.</li>
+                    <li>After shaking stops, check for hazards and leave damaged buildings carefully.</li>
+                </ul>
+            </div>
+
+            <!-- Fire -->
+            <div class="tips-card">
+                <div class="card-icon">🔥</div>
+                <h3>Fire Safety</h3>
+                <ul class="tips-list">
+                    <li>Raise the alarm and leave the building quickly.</li>
+                    <li>Use stairs, not elevators.</li>
+                    <li>Stay low if there is smoke.</li>
+                    <li>Never re-enter a burning building.</li>
+                    <li>Call emergency services from a safe place.</li>
+                </ul>
+            </div>
+
+            <!-- Cyclone -->
+            <div class="tips-card">
+                <div class="card-icon">🌀</div>
+                <h3>Cyclone Safety</h3>
+                <ul class="tips-list">
+                    <li>Monitor official weather warnings.</li>
+                    <li>Secure loose outdoor objects if it is safe.</li>
+                    <li>Stay indoors and away from windows.</li>
+                    <li>Evacuate when instructed by authorities.</li>
+                    <li>Avoid fallen power lines and flooded roads.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Emergency Kit -->
+    <section class="disasters" id="emergency-kit">
+        <div class="section-heading">
+            <p class="tagline">BE READY</p>
+            <h2>Emergency Kit Checklist</h2>
+            <p>Keep essential supplies in an easy-to-carry bag.</p>
+        </div>
+
+        <div class="kit-list">
+            <div class="kit-item">💧 Drinking water</div>
+            <div class="kit-item">🥫 Non-perishable food</div>
+            <div class="kit-item">🔦 Torch and spare batteries</div>
+            <div class="kit-item">🩹 First-aid kit</div>
+            <div class="kit-item">💊 Essential medicines</div>
+            <div class="kit-item">📱 Charged phone and power bank</div>
+            <div class="kit-item">📄 Copies of important documents</div>
+            <div class="kit-item">📻 Battery-powered radio, if available</div>
+        </div>
+    </section>
+
+    <!-- Final Reminder -->
+    <section class="preparedness">
+        <div>
+            <p class="tagline">REMEMBER</p>
+            <h2>Your Safety Comes First.</h2>
+            <p>
+                Stay calm, avoid unnecessary risks and follow
+                instructions from emergency responders and local authorities.
+            </p>
+        </div>
+
+        <a href="emergency.html" class="btn primary">
+            Emergency Help
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🛡️ DisasterSafe</h3>
+        <p>Creating awareness. Building a safer tomorrow.</p>
+        <p class="footer-note">
+            Educational project. Follow official emergency guidance
+            during real incidents.
+        </p>
+        <p>© 2026 DisasterSafe | Disaster Management System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Alerts | DisasterSafe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .alert-status {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            background: #e7f7eb;
+            color: #18783a;
+        }
+
+        .alert-info {
+            margin: 30px 8%;
+            padding: 22px;
+            background: #fff3df;
+            border-left: 5px solid #ed9b20;
+            border-radius: 8px;
+        }
+
+        .alert-info h3 {
+            color: #8a4d00;
+            margin-bottom: 8px;
+        }
+
+        .alert-info p {
+            color: #68543b;
+            font-size: 14px;
+        }
+
+        .alert-date {
+            color: #7b8493;
+            font-size: 12px;
+            margin-top: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .alert-info {
+                margin: 25px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">🛡️ DisasterSafe</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="alerts.html">Disaster Alerts</a>
+            <a href="safety-tips.html">Safety Tips</a>
+            <a href="emergency.html">Emergency Help</a>
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">STAY INFORMED</p>
+
+            <h1>Disaster <span>Alerts</span></h1>
+
+            <p>
+                Understand warning levels, stay aware of possible
+                hazards and follow instructions from official authorities.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="safety-tips.html" class="btn primary">
+                    View Safety Tips
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-icon">🚨</div>
+    </section>
+
+    <!-- Important Notice -->
+    <section class="alert-info">
+        <h3>⚠️ Important Information</h3>
+        <p>
+            The cards below are educational examples, not live alerts.
+            Check official sources such as the India Meteorological
+            Department and NDMA for current warnings in your area.
+        </p>
+    </section>
+
+    <!-- Alert Cards -->
+    <section class="disasters">
+        <div class="section-heading">
+            <p class="tagline">KNOW THE WARNING SIGNS</p>
+            <h2>Disaster Warning Categories</h2>
+            <p>Examples to help you understand different disaster risks.</p>
+        </div>
+
+        <div class="disaster-grid">
+
+            <div class="disaster-card">
+                <div class="card-icon">🌊</div>
+                <span class="alert-status">Awareness</span>
+                <h3>Flood Alert</h3>
+                <p>
+                    Heavy rainfall may cause waterlogging and flooding.
+                    Avoid flooded roads and move to higher ground if advised.
+                </p>
+                <a href="safety-tips.html">Safety Instructions →</a>
+                <p class="alert-date">Educational example only</p>
+            </div>
+
+            <div class="disaster-card">
+                <div class="card-icon">🌎</div>
+                <span class="alert-status">Preparedness</span>
+                <h3>Earthquake Alert</h3>
+                <p>
+                    Earthquakes can occur suddenly. Learn how to
+                    Drop, Cover and Hold On during shaking.
+                </p>
+                <a href="safety-tips.html">Safety Instructions →</a>
+                <p class="alert-date">Educational example only</p>
+            </div>
+
+            <div class="disaster-card">
+                <div class="card-icon">🌀</div>
+                <span class="alert-status">Awareness</span>
+                <h3>Cyclone Alert</h3>
+                <p>
+                    Strong winds and heavy rain can be dangerous.
+                    Follow official weather warnings and evacuation advice.
+                </p>
+                <a href="safety-tips.html">Safety Instructions →</a>
+                <p class="alert-date">Educational example only</p>
+            </div>
+
+            <div class="disaster-card">
+                <div class="card-icon">🔥</div>
+                <span class="alert-status">Prevention</span>
+                <h3>Fire Safety</h3>
+                <p>
+                    Smoke or fire requires immediate caution.
+                    Leave the danger area and call emergency services.
+                </p>
+                <a href="safety-tips.html">Safety Instructions →</a>
+                <p class="alert-date">Educational example only</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Official Information -->
+    <section class="preparedness">
+        <div>
+            <p class="tagline">TRUST OFFICIAL INFORMATION</p>
+            <h2>Check Before You Act</h2>
+            <p>
+                For current weather warnings and disaster guidance,
+                consult official government sources. This demonstration
+                website does not receive live alert data.
+            </p>
+        </div>
+
+        <a
+            href="https://mausam.imd.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn primary"
+        >
+            Visit IMD Website
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🛡️ DisasterSafe</h3>
+        <p>Creating awareness. Building a safer tomorrow.</p>
+        <p class="footer-note">
+            Educational project only. Follow official emergency
+            instructions during real disasters.
+        </p>
+        <p>© 2026 DisasterSafe | Disaster Management System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

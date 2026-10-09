@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Help | DisasterSafe</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .emergency-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .emergency-card {
+            padding: 28px 22px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #e9edf3;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(25, 40, 65, 0.05);
+        }
+
+        .emergency-card .card-icon {
+            margin: 0 auto 15px;
+        }
+
+        .emergency-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .emergency-number {
+            display: block;
+            margin: 12px 0;
+            font-size: 30px;
+            font-weight: bold;
+            color: #d62828;
+        }
+
+        .emergency-card p {
+            font-size: 14px;
+            color: #697586;
+        }
+
+        .call-link {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 10px 20px;
+            background: #d62828;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .call-link:hover {
+            background: #a91e1e;
+        }
+
+        .emergency-note {
+            margin: 30px 8%;
+            padding: 24px;
+            background: #fff3df;
+            border-left: 5px solid #ed9b20;
+            border-radius: 8px;
+        }
+
+        .emergency-note h3 {
+            color: #8a4d00;
+            margin-bottom: 8px;
+        }
+
+        .emergency-note p {
+            color: #68543b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 800px) {
+            .emergency-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .emergency-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .emergency-note {
+                margin: 25px 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">🛡️ DisasterSafe</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="alerts.html">Disaster Alerts</a>
+            <a href="safety-tips.html">Safety Tips</a>
+            <a href="emergency.html">Emergency Help</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">HELP IS IMPORTANT</p>
+
+            <h1>Emergency <span>Help Center</span></h1>
+
+            <p>
+                Know which emergency service to contact.
+                Stay calm, explain your location clearly and
+                follow the instructions of emergency responders.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#emergency-numbers" class="btn primary">
+                    View Emergency Numbers
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-icon">🆘</div>
+    </section>
+
+    <!-- Emergency Notice -->
+    <section class="emergency-note">
+        <h3>⚠️ Facing an Immediate Emergency?</h3>
+        <p>
+            In India, call 112 for emergency assistance. If you are in
+            immediate danger, move to a safe place if possible and
+            follow instructions from emergency responders.
+        </p>
+    </section>
+
+    <!-- Emergency Numbers -->
+    <section class="disasters" id="emergency-numbers">
+
+        <div class="section-heading">
+            <p class="tagline">SAVE THESE NUMBERS</p>
+            <h2>Emergency Contact Numbers</h2>
+            <p>Important helplines for people in India.</p>
+        </div>
+
+        <div class="emergency-grid">
+
+            <div class="emergency-card">
+                <div class="card-icon">🆘</div>
+                <h3>All-in-One Emergency</h3>
+                <span class="emergency-number">112</span>
+                <p>Pan-India emergency response number.</p>
+                <a href="tel:112" class="call-link">Call 112</a>
+            </div>
+
+            <div class="emergency-card">
+                <div class="card-icon">🚒</div>
+                <h3>Fire and Rescue</h3>
+                <span class="emergency-number">101</span>
+                <p>Fire and rescue assistance.</p>
+                <a href="tel:101" class="call-link">Call 101</a>
+            </div>
+
+            <div class="emergency-card">
+                <div class="card-icon">🚑</div>
+                <h3>Ambulance</h3>
+                <span class="emergency-number">108</span>
+                <p>Emergency medical assistance in supported areas.</p>
+                <a href="tel:108" class="call-link">Call 108</a>
+            </div>
+
+            <div class="emergency-card">
+                <div class="card-icon">👮</div>
+                <h3>Police</h3>
+                <span class="emergency-number">112</span>
+                <p>Police assistance through the integrated emergency number.</p>
+                <a href="tel:112" class="call-link">Call 112</a>
+            </div>
+
+            <div class="emergency-card">
+                <div class="card-icon">🌪️</div>
+                <h3>Disaster Information</h3>
+                <span class="emergency-number">NDMA</span>
+                <p>Visit the official National Disaster Management Authority website.</p>
+                <a
+                    href="https://ndma.gov.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="call-link"
+                >
+                    Visit NDMA
+                </a>
+            </div>
+
+            <div class="emergency-card">
+                <div class="card-icon">🌦️</div>
+                <h3>Weather Warnings</h3>
+                <span class="emergency-number">IMD</span>
+                <p>Check official weather forecasts and warnings.</p>
+                <a
+                    href="https://mausam.imd.gov.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="call-link"
+                >
+                    Visit IMD
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Emergency Instructions -->
+    <section class="preparedness">
+        <div>
+            <p class="tagline">DURING AN EMERGENCY</p>
+            <h2>Stay Calm. Act Quickly. Stay Safe.</h2>
+            <p>
+                Share your exact location with the emergency operator,
+                describe what happened and follow their instructions.
+                Never make false emergency calls.
+            </p>
+        </div>
+
+        <a href="safety-tips.html" class="btn primary">
+            Read Safety Tips
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🛡️ DisasterSafe</h3>
+        <p>Creating awareness. Building a safer tomorrow.</p>
+        <p class="footer-note">
+            Emergency numbers and service availability may vary.
+            Use official government information for confirmation.
+        </p>
+        <p>© 2026 DisasterSafe | Disaster Management System</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
